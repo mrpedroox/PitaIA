@@ -11,9 +11,43 @@ A proposta é entender o que acontece por trás dos modelos: de onde vêm as fó
 - Exemplos com dados reais, gráficos e interpretação dos resultados.
 - Comparações entre implementações próprias e modelos de biblioteca.
 
-O repositório está em construção: os materiais serão acrescentados conforme o desenvolvimento do minicurso. A ementa abaixo descreve o percurso previsto, não uma lista de notebooks já disponíveis.
+O repositório está em construção. As aulas disponíveis estão listadas abaixo; a ementa completa apresenta também os temas que serão desenvolvidos nas próximas etapas.
 
-## Conteúdo previsto
+## Aulas disponíveis
+
+### Regressão logística — classificação binária
+
+[Abrir o notebook de regressão logística](Regress%C3%A3o%20Log%C3%ADstica/regressao-logistica-livecoding.ipynb) · [Dataset: breast-cancer.csv](Regress%C3%A3o%20Log%C3%ADstica/breast-cancer.csv)
+
+Classificação de amostras como benignas ou malignas a partir de 30 medidas celulares, com implementação em NumPy e comparação com `LogisticRegression` do scikit-learn.
+
+- Separação de treino e teste e padronização com NumPy.
+- Combinação linear, intercepto e representação matricial.
+- Dedução da sigmoide, da perda logarítmica e do gradiente.
+- Treinamento por descida do gradiente e verificação do critério de parada.
+- Probabilidades, limiar de decisão, acurácia, falsos negativos e falsos positivos.
+- Comparação das implementações sem regularização e interpretação dos gráficos.
+
+### Regressão linear — OLS, GD e SGD
+
+[Abrir o notebook de regressão linear](Regress%C3%A3o%20LInear/regressao-linear-livecoding.ipynb) · [Dataset: housing.csv](Regress%C3%A3o%20LInear/housing.csv)
+
+Previsão do valor mediano das moradias de regiões da Califórnia com regressão linear múltipla. A aula retoma brevemente a preparação já apresentada na regressão logística e detalha as técnicas novas.
+
+- Imputação de valores ausentes pela mediana e codificação one-hot com categoria de referência.
+- Dedução do erro quadrático médio (MSE), de seu gradiente e das equações normais.
+- Mínimos quadrados ordinários (OLS) com solução direta em NumPy.
+- Implementações de descida do gradiente em lote (GD) e estocástica (SGD), com taxa decrescente no SGD.
+- Gráficos de MSE, análise da convergência e comparação com a solução direta.
+- Baseline pela média, MSE, RMSE, MAE e R² no treino e no teste.
+- Treinamento com `LinearRegression` e `SGDRegressor` do scikit-learn.
+- Interpretação dos coeficientes na escala original e diagnóstico dos resíduos.
+
+Os dois notebooks incluem explicações, fórmulas, código, resultados e gráficos salvos. Para acompanhar as referências aos conceitos já apresentados, siga a ordem acima.
+
+## Ementa do minicurso
+
+A ementa reúne o conteúdo já abordado e o planejamento das próximas aulas. A lista de aulas disponíveis acima indica o que já foi implementado; alguns tópicos dos módulos abaixo ainda serão acrescentados.
 
 | Módulo | Tópicos |
 |---|---|
@@ -67,7 +101,7 @@ O ambiente virtual mantém as dependências do projeto separadas das demais inst
 Com o ambiente ativado:
 
 ```bash
-python -m pip install -r requirements-aula.txt
+python -m pip install -r requirements.txt
 ```
 
 O arquivo registra as versões das bibliotecas usadas para executar e validar o material.
