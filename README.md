@@ -43,7 +43,22 @@ Previsão do valor mediano das moradias de regiões da Califórnia com regressã
 - Treinamento com `LinearRegression` e `SGDRegressor` do scikit-learn.
 - Interpretação dos coeficientes na escala original e diagnóstico dos resíduos.
 
-Os dois notebooks incluem explicações, fórmulas, código, resultados e gráficos salvos. Para acompanhar as referências aos conceitos já apresentados, siga a ordem acima.
+### KNN — K-vizinhos mais próximos
+
+[Abrir o notebook de KNN](KNN/knn-livecoding.ipynb) · [Dataset: breast-cancer.csv](KNN/breast-cancer.csv)
+
+Classificação com as mesmas 30 características e a mesma convenção de rótulos da aula de regressão logística: benigno = 0 e maligno = 1. O CSV é uma cópia idêntica do arquivo daquela aula.
+
+- Dedução da distância euclidiana, efeito da padronização e justificativa da votação.
+- Implementação de distâncias, busca de vizinhos e previsão binária com NumPy.
+- Explicações de cada linha de código e exemplos pequenos para conferir as contas à mão.
+- Seleção de `k` em validação interna, com padronização aprendida apenas no ajuste e teste reservado para o final.
+- Matriz de confusão, acurácia, precisão, recall, especificidade e F1 calculados manualmente.
+- Comparação com `KNeighborsClassifier` usando os mesmos dados padronizados com NumPy.
+- Código direto para iniciantes, gráfico de validação e interpretação dos resultados.
+- Visualização dos vizinhos de uma consulta, do efeito de `k` nas fronteiras e comparação com regressão logística em duas luas artificiais.
+
+Os três notebooks incluem explicações, fórmulas, código, resultados e gráficos salvos. Para acompanhar as referências aos conceitos já apresentados, siga a ordem acima.
 
 ## Ementa do minicurso
 
